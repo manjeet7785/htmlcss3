@@ -1,0 +1,122 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+Html , body {
+  width: 100%;
+  height: 100%;
+}
+#main{
+  width: 100%;
+  height: 100%;
+}
+#nav{
+  height: 80px;
+  width: 100%;
+ 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+}
+#nav-part-1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+}
+.gola{
+  height: 30px;
+  width: 30px;
+  background-color: black;
+  border-radius: 50%;
+  gap: 2px;
+}
+#nav-part-2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+#nav-part-2 h4{
+  font-size: 18px;
+  font-weight: 500;
+}
+#nav-part-2 h4 span{
+  color: blue;
+  margin-left: 25px;
+}
+#nav2{
+  height: 70px;
+  width: 100%;
+  
+  display: flex;
+  align-items: center;
+  padding: 0 50px;
+  gap: 50px;
+}
+#nav2 h3{
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  
+}
+#content{
+  
+  height: calc(100% - 150px);
+  width: 100%;
+ 
+}
+#text-content{
+  height: 40%;
+  width: 100%;
+  display: flex;  
+  align-items: center;
+  
+  flex-wrap: nowrap;
+  overflow-x: auto;  
+}
+#text{
+  flex-shrink: 0;
+  height: 100%;
+  width: 70%;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#text h1{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 120px;
+  text-transform: capitalize;
+  font-weight: 100;
+}
+
+#text-content::-webkit-scrollbar{
+ 
+  background-color: transparent;
+  height: 5px;
+}
+#text-content::-webkit-scrollbar-thumb{
+  background-color: orangered;
+}
+
+#image-content{
+  height: 60%;
+  width: 100%;
+  
+  display: flex; 
+  overflow-x: auto;
+}
+#image-content::-webkit-scrollbar{
+  background-color: transparent;
+}
+
+#image-content img{
+  
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  
+}
